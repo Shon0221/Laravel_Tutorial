@@ -1,6 +1,41 @@
 # Laravel_Tutorial
 自我學習PHP Laravel framework
 
+## Setting Project
+
+* Create Pehect
+
+        composer global require "laravel/installer"
+        composer create-project laravel/laravel {project name}
+        
+ * Directory Structure
+ 
+        app         -->      保存大部分實際應用程式的地方。model, controller, router, 命令和網域設定
+        bootstrap   -->      存放Laravel框架在每次執行，用來啟動的檔案
+        config      -->      放置所有組態檔
+        database    -->      放置DB migration, 種子與工廠
+        public      -->      當伺服器服務網站指向的目錄。
+        resource    -->      保存其他腳本所需的檔案
+        routes      -->      所有的路由定義
+        storage     -->      保存快取, log與編譯過的系統檔案
+        tests       -->      單元與整合測試
+        vender      -->      Composer所安裝依賴的套件
+        
+* File
+
+        .editorconfig           -->         提供Laravel編寫標準
+        .env & .envexample      -->         主宰環境變數的檔案
+        .gitinore               -->         Git組態檔
+        .gitattributes
+        artisan                 -->         可在命令列上執行Artisan命令檔案
+        composer.json           -->         Composer組態檔。.json可以自行編輯， .lock是檔案共享一些關於專案的基本資訊，也會定義與PHP依賴關係
+        composer.lock
+        package.json            -->         跟NPM說需要那些JS套件
+        phpunit.xml             -->         PHPUnit組態檔，Laravel內建測試工具
+        server.php              -->         後備伺服器，它會試著讓能力差的伺服器仍然可以預覽Laravel應用程式
+        webpak.min.js           -->         min組態檔。如使用Elixir，會看到gulpfile.js。這些檔案負責組建系統如何編譯與處理前端
+        
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
